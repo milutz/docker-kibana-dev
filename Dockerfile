@@ -1,7 +1,7 @@
 FROM node
 
 ## Uncommet checkout line to use this version
-ENV KIBANA_VERSION 5.4.1
+ENV KIBANA_VERSION 5.4.2
 
 RUN set -x \
 	&& git clone https://github.com/elastic/kibana.git \
