@@ -1,12 +1,12 @@
 FROM node
 
 ## Uncommet checkout line to use this version
-#ENV KIBANA_VERSION 5.6.5
+ENV KIBANA_VERSION 5.0.0
 
 RUN set -x \
 	&& git clone https://github.com/elastic/kibana.git \
 	&& cd kibana \
-	#&& git checkout tags/v$KIBANA_VERSION \
+	&& git checkout tags/v$KIBANA_VERSION \
 	&& rm -rf .git \
 	&& npm install \
 	
