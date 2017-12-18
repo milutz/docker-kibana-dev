@@ -1,6 +1,6 @@
 FROM node
 
-ENV KIBANA_VERSION 5.6.5
+#ENV KIBANA_VERSION 5.6.5
 
 RUN set -x \
 	&& git clone https://github.com/elastic/kibana.git \
